@@ -3,15 +3,16 @@ const rl = readline.createInterface({
     input : process.stdin,
     output : process.stdout
 })
-rl.question('Voce gosta de cafe?', (input)=>{
+rl.question('Você gosta de café?', (input)=>{
     const cafe = input
-    if(cafe === 'sim'){
-        console.log('Café traz muitos beneficios')
+    if(cafe === 'sim' || cafe === 'Sim'){
+        console.log('Café traz muitos benefícios')
         rl.close()
     }else{
-        if(cafe === 'nao' || cafe === 'não'){
-        console.log('Muitas pessoas nao gostam de cafe')
+        if(cafe === 'nao' || cafe === 'não' || cafe === 'Nao' || cafe === 'Não'){
+        console.log('Muitas pessoas não gostam de café')
         rl.close()
     }
 }
 })
+// alterar esse codigo

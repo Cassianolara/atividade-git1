@@ -5,10 +5,11 @@ const rl = readline.createInterface({
 })
 
 rl.question('Voce tem titulo de eleitor?  ', (input)=>{
-    if(input === 'sim'){
+    const resposta = input
+    if(resposta === 'sim'){
         console.log('Voce pode votar! ')
         rl.close()
-    }else if(input === 'nao' || input === 'Não' || input === 'não'){
+    }else if(resposta === 'nao' || resposta === 'Não' || resposta === 'não'){
         console.log('Voce nao pode votar! Faça o titulo de eleitor!!')
         rl.close()
     }
